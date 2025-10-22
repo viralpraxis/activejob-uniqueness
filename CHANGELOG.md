@@ -5,6 +5,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased](https://github.com/veeqo/activejob-uniqueness/compare/v0.4.0...HEAD)
 
+- [#91](https://github.com/veeqo/activejob-uniqueness/pull/91) Add ActiveJob 8.1 support by [@viralpraxis](https://github.com/viralpraxis)
 
 ## [0.4.0](https://github.com/veeqo/activejob-uniqueness/compare/v0.3.2...v0.4.0) - 2024-12-07
 

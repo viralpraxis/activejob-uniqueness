@@ -28,13 +28,19 @@ Gem::Specification.new do |spec|
 
   spec.required_ruby_version = '>= 2.5'
 
-  spec.add_dependency 'activejob', '>= 4.2', '< 8.1'
+  spec.add_dependency 'activejob', '>= 4.2', '< 8.2'
   spec.add_dependency 'redlock', '>= 2.0', '< 3'
 
+  spec.add_development_dependency 'mutex_m'
+  spec.add_development_dependency 'bigdecimal'
+  spec.add_development_dependency 'logger'
+  spec.add_development_dependency 'base64'
   spec.add_development_dependency 'appraisal', '~> 2.3.0'
   spec.add_development_dependency 'bundler', '>= 2.0'
   spec.add_development_dependency 'pry-byebug', '> 3.6.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop', '~> 1.28'
-  spec.add_development_dependency 'rubocop-rspec', '~> 2.10'
+  spec.add_development_dependency 'rubocop-rspec', '~> 3.7'
+  spec.add_development_dependency 'readline'
+  spec.add_development_dependency 'irb'
 end

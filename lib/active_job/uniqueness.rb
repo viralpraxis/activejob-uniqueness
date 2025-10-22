@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'logger'
+
 require 'active_job'
 require 'redlock'
 

@@ -2,6 +2,6 @@
 
 source "https://rubygems.org"
 
-gem "sidekiq", "~> 7.3"
+gem "activejob", ">= 8.1.0.rc1", "< 8.2"
 
 gemspec path: "../"

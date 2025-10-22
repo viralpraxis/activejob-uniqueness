@@ -5,8 +5,10 @@ require 'sidekiq/api'
 
 module ActiveJob
   module Uniqueness
-    def self.unlock_sidekiq_job!(job_data)
-      return unless job_data['class'] == 'ActiveJob::QueueAdapters::SidekiqAdapter::JobWrapper' # non ActiveJob jobs
+    def self.unlock_sidekiq_job!(job_data) # rubocop:disable Metrics/MethodLength
+      unless %w[ActiveJob::QueueAdapters::SidekiqAdapter::JobWrapper Sidekiq::ActiveJob::Wrapper].include?(job_data['class'])
+        return
+      end
 
       job = ActiveJob::Base.deserialize(job_data.fetch('args').first)
 

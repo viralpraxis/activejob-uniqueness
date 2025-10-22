@@ -1,7 +1,8 @@
-require: rubocop-rspec
+plugins:
+  - rubocop-rspec
 
 AllCops:
-  TargetRubyVersion: 2.5
+  TargetRubyVersion: 2.7
   NewCops: enable
   Exclude:
     - gemfiles/**/*
@@ -66,3 +67,12 @@ RSpec/AnyInstance:
 RSpec/LetSetup:
   Exclude:
     - spec/active_job/uniqueness/sidekiq_patch_spec.rb
+
+RSpec/IncludeExamples:
+  Enabled: false
+
+Naming/PredicateMethod:
+  Enabled: false
+
+Lint/FloatComparison:
+  Enabled: false
