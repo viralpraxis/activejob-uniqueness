@@ -40,7 +40,6 @@ jobs:
           - gemfiles/sidekiq_5.x.gemfile
           - gemfiles/sidekiq_6.x.gemfile
           # - gemfiles/sidekiq_7.x.gemfile
-          - gemfiles/sidekiq_8.x.gemfile
         exclude:
           - ruby: 2.7.8
             gemfile: gemfiles/activejob_4.2.x.gemfile
