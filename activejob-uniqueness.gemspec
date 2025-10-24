@@ -29,6 +29,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 2.5'
 
   spec.add_dependency 'activejob', '>= 4.2', '< 8.2'
+  spec.add_dependency 'activesupport', '>= 4.2', '< 8.2'
   spec.add_dependency 'redlock', '>= 2.0', '< 3'
 
   spec.add_development_dependency 'mutex_m'
